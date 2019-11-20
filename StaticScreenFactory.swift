@@ -1,16 +1,9 @@
-//
-//  StaticScreenFactory.swift
-//  TogetherCare
-//
-//  Created by zapbuild on 12/09/19.
-//  Copyright © 2019 Apple. All rights reserved.
-//
-
 import Foundation
 
 // Factory class for the static pages
 class WebPageFactory{
     
+    // static page name
     enum WebPage:String {
         case termsOfUse
         case privacyPolicy
@@ -38,7 +31,7 @@ class WebPageFactory{
     public class func urlFor(page:WebPage) -> [String] {
         switch page {
         case .termsOfUse:
-            return [Constants.WebServicesApi.termsAndCondition,webTitle.termsOfUse]
+            return [Constants.WebServicesApi.termsAndCondition,webTitle.termsOfUse] // return webapi url and webtitle
         case .privacyPolicy:
             return  [Constants.WebServicesApi.privacyPolicy,webTitle.privacyPolicy]
         case .cookiePolicy:
