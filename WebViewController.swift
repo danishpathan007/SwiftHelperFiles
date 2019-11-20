@@ -1,10 +1,3 @@
-//
-//  WebViewController.swift
-//  TogetherCare
-//
-//  Created by zapbuild on 05/09/19.
-//  Copyright © 2019 Apple. All rights reserved.
-//
 
 import UIKit
 
